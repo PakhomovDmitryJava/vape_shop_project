@@ -1,0 +1,83 @@
+create database vapeshop_repository;
+
+create table role (
+    id serial primary key ,
+    role_name varchar(32) unique not null
+);
+
+create table customer
+(
+    id            serial primary key unique,
+    first_name    varchar(32)        not null,
+    last_name     varchar(32)        not null,
+    date_of_birth date                not null,
+    email         varchar(128) unique not null,
+    mobile_phone  varchar(128) unique not null
+);
+
+create table customer_roles (
+    user_id int references customer (id),
+    role_id int references role (id)
+);
+
+create table nicotine
+(
+    id            serial primary key,
+    nicotine_type varchar(16)
+);
+
+create table nicotine_concentration
+(
+    id            serial primary key,
+    nicotine_type varchar(16)
+);
+
+create table base
+(
+    id          serial primary key,
+    pg_vg_ratio varchar(16)
+);
+
+create table origin
+(
+    id      serial primary key,
+    country varchar(128) unique
+);
+
+create table manufacturer
+(
+    id                serial primary key,
+    manufacturer_name varchar(32) unique
+);
+
+create table liquid_taste
+(
+    id            serial primary key,
+    type_of_taste varchar(32) not null
+);
+
+create table liquid_line
+(
+    id   serial primary key,
+    line varchar(32) unique not null
+);
+
+create table liquid
+(
+    id                        serial primary key,
+    manufacturer_id int references manufacturer (id),
+    line_id                   int references liquid_line (id),
+    description               varchar(128) not null,
+    nicotine_id               int references nicotine (id),
+    nicotine_concentration_id int references nicotine_concentration (id),
+    base_id                   int references base (id),
+    origin_id                 int references origin (id),
+    liquid_taste_id           int references liquid_taste (id)
+);
+
+create table customer_order (
+    id serial primary key,
+    user_id int references customer (id),
+    liquid_id int references liquid (id),
+    count int not null
+);
