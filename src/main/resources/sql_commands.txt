@@ -72,7 +72,8 @@ create table liquid
     nicotine_concentration_id int references nicotine_concentration (id),
     base_id                   int references base (id),
     origin_id                 int references origin (id),
-    liquid_taste_id           int references liquid_taste (id)
+    liquid_taste_id           int references liquid_taste (id),
+    price                     int not null
 );
 
 create table customer_order (
