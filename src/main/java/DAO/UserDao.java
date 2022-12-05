@@ -23,13 +23,13 @@ public class UserDao implements Dao<Long, User> {
             """;
 
     private static final String SAVE_SQL = """
-            INSERT INTO "user" ( first_name, last_name, date_of_birth, address, email, mobile_phone, "password")
+            INSERT INTO "user" (first_name, last_name, date_of_birth, address, email, mobile_phone, "password")
             VALUES (?, ?, ?, ?, ?, ?, ?);
             """;
 
     private static final String UPDATE_SQL = """
             UPDATE "user"
-            SET      
+            SET
             first_name = ? ,
             last_name = ? ,
             date_of_birth = ? ,
@@ -73,8 +73,7 @@ public class UserDao implements Dao<Long, User> {
 
     @Override
     public boolean delete(Long id) {
-        try (var connection = ConnectionManager.get();
-             var preparedStatement = connection.prepareStatement(DELETE_SQL)) {
+        try (var connection = ConnectionManager.get(); var preparedStatement = connection.prepareStatement(DELETE_SQL)) {
             preparedStatement.setLong(1, id);
             return preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
@@ -84,8 +83,7 @@ public class UserDao implements Dao<Long, User> {
 
     @Override
     public User save(User user) {
-        try (Connection connection = ConnectionManager.get();
-             PreparedStatement preparedStatement = connection.prepareStatement(SAVE_SQL, Statement.RETURN_GENERATED_KEYS)) {
+        try (Connection connection = ConnectionManager.get(); PreparedStatement preparedStatement = connection.prepareStatement(SAVE_SQL, Statement.RETURN_GENERATED_KEYS)) {
             setUserFields(user, preparedStatement);
             preparedStatement.executeUpdate();
             var generatedKeys = preparedStatement.getGeneratedKeys();
@@ -154,16 +152,14 @@ public class UserDao implements Dao<Long, User> {
 
     private User buildUser(ResultSet resultSet) {
         try {
-            return new User(
-                    resultSet.getLong("id"),
+            return new User(resultSet.getLong("id"),
                     resultSet.getString("first_name"),
                     resultSet.getString("last_name"),
                     resultSet.getTimestamp("date_of_birth").toLocalDateTime(),
                     resultSet.getString("address"),
                     resultSet.getString("email"),
                     resultSet.getString("mobile_phone"),
-                    resultSet.getString("password")
-            );
+                    resultSet.getString("password"));
         } catch (SQLException e) {
             throw new DaoException(e);
         }

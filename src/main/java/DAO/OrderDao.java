@@ -3,6 +3,7 @@ package DAO;
 import entity.Order;
 import entity.User;
 import exceptiom.DaoException;
+import lombok.NoArgsConstructor;
 import util.ConnectionManager;
 
 import java.sql.Connection;
@@ -11,10 +12,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 
+@NoArgsConstructor
 public class OrderDao implements Dao<Long, Order> {
     private static final OrderDao INSTANCE = new OrderDao();
     private static final String DELETE_SQL = """
@@ -52,7 +56,7 @@ public class OrderDao implements Dao<Long, Order> {
                    o.is_paid,
                    o.date_of_order
             FROM "user" u
-                    left join "order" o on u.id = o.user_id
+                    left join vapeshop_repository.public."order" o on u.id = o.user_id
                         """;
 
     private static final String FIND_BY_ID_SQL = FIND_ALL_SQL + """
@@ -62,8 +66,6 @@ public class OrderDao implements Dao<Long, Order> {
 
     private final UserDao userDao = UserDao.getInstance();
 
-    public OrderDao() {
-    }
 
     public static OrderDao getInstance() {
         return INSTANCE;
@@ -71,7 +73,8 @@ public class OrderDao implements Dao<Long, Order> {
 
     @Override
     public boolean delete(Long id) {
-        try (var connection = ConnectionManager.get(); var preparedStatement = connection.prepareStatement(DELETE_SQL)) {
+        try (var connection = ConnectionManager.get();
+             var preparedStatement = connection.prepareStatement(DELETE_SQL)) {
             preparedStatement.setLong(1, id);
             return preparedStatement.executeUpdate() > 0;
         } catch (SQLException e) {
@@ -120,7 +123,8 @@ public class OrderDao implements Dao<Long, Order> {
 
     @Override
     public Optional<Order> findById(Long id) {
-        try (var connection = ConnectionManager.get(); var preparedStatement = connection.prepareStatement(FIND_BY_ID_SQL)) {
+        try (var connection = ConnectionManager.get();
+             var preparedStatement = connection.prepareStatement(FIND_BY_ID_SQL)) {
             preparedStatement.setLong(1, id);
             var resultSet = preparedStatement.executeQuery();
             Order order = null;
@@ -146,6 +150,7 @@ public class OrderDao implements Dao<Long, Order> {
                     resultSet.getString("password")
 
             );
+
             return new Order(
                     resultSet.getLong("id"),
                     userDao.findById(resultSet.getLong("user_id")).orElse(null),
@@ -160,7 +165,17 @@ public class OrderDao implements Dao<Long, Order> {
 
     @Override
     public List<Order> findAll() {
-        return null;
+        try (var connection = ConnectionManager.get();
+             var preparedStatement = connection.prepareStatement(FIND_ALL_SQL)) {
+            var resultSet = preparedStatement.executeQuery();
+            List<Order> orders = new ArrayList<>();
+            while (resultSet.next()) {
+                orders.add(buildOrder(resultSet));
+            }
+            return orders;
+        } catch (SQLException e) {
+            throw new DaoException(e);
+        }
     }
 
 

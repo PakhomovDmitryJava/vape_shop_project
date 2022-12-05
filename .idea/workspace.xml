@@ -4,63 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68770423-756b-4cc0-9048-5b03e0132928" name="Changes" comment="JDBC ConnectionManager and Driver">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DTO/TicketFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DaoRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exceptiom/DaoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/PropertiesUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/book_repository.YDperA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/book_repository.YDperA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/book_repository.YDperA/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/book_repository.YDperA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/book_repository.YDperA/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/book_repository.YDperA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/company_repository.TDSewg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/company_repository.TDSewg/schema/company_storage.uVhVLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/company_repository.TDSewg/schema/company_storage.uVhVLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/company_repository.TDSewg/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/company_repository.TDSewg/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/company_repository.TDSewg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/company_repository.TDSewg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/company_repository.TDSewg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/flight_repository.eYZRHw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/flight_repository.eYZRHw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/flight_repository.eYZRHw/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/flight_repository.eYZRHw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/flight_repository.eYZRHw/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/flight_repository.eYZRHw/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/postgres.edMnLQ/schema/vapeshop_repository.U2YFLg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/vapeshop_repository.U2YFLg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/67bf3b73-f3db-4b54-8d3d-4f3e8590eac2/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="68770423-756b-4cc0-9048-5b03e0132928" name="Changes" comment="Some CRUD operation added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/BaseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/LiquidDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/LiquidLineDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/LiquidTasteDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/ManufacturerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/NicConcentrationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/NicTypeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/OriginCountryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Liquid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/LiquidLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/LiquidTaste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Manufacturer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/NicConcentration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/NicType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/OriginCountry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/08a436b3-5527-4ca3-99dc-0befb3748100.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08a436b3-5527-4ca3-99dc-0befb3748100.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/08a436b3-5527-4ca3-99dc-0befb3748100/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08a436b3-5527-4ca3-99dc-0befb3748100/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ConnectionManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JdbcRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql_commands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/OrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DaoRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DaoRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,33 +90,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module",
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;,
+      &quot;directory&quot;
     ],
-    "DatabaseDriversLRU": [
-      "postgresql"
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="entity" />
@@ -235,7 +203,9 @@
       <workItem from="1669475297876" duration="882000" />
       <workItem from="1669476232976" duration="9871000" />
       <workItem from="1669543865571" duration="4368000" />
-      <workItem from="1669548284931" duration="17331000" />
+      <workItem from="1669548284931" duration="51512000" />
+      <workItem from="1670237618887" duration="11306000" />
+      <workItem from="1670269003866" duration="4950000" />
     </task>
     <task id="LOCAL-00001" summary="Database started">
       <created>1668980216928</created>
@@ -251,7 +221,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669056324576</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Some CRUD operation added">
+      <created>1669575441698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669575441698</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Some CRUD operation added">
+      <created>1669575479270</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669575479270</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Some CRUD operation added">
+      <created>1669575489610</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669575489610</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +262,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Database started" />
     <MESSAGE value="JDBC ConnectionManager and Driver" />
-    <option name="LAST_COMMIT_MESSAGE" value="JDBC ConnectionManager and Driver" />
+    <MESSAGE value="Some CRUD operation added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some CRUD operation added" />
   </component>
 </project>
