@@ -45,10 +45,12 @@ public class DaoRunner {
 
 
         //        findAllLiquidLinesTest();
-        findByIdLiquidTest(1L);
+//        findByIdLiquidTest(1L);
+            updateLiquidTest(2L);
+//                saveLiquidTest();
 //        deleteLiquidTest(1L);
-//        saveLiquidTest();
-//        deleteLiquidLineTest(12L);
+
+
 
 //        findAllLiquidLinesTest();
 //        findByIdLiquidLineTest(1L);
@@ -129,6 +131,7 @@ public class DaoRunner {
     private static void findByIdLiquidTest(Long id) {
         var instance = LiquidDao.getInstance();
         var liquid = instance.findById(id);
+        System.out.println(liquid);
     }
 
     private static void updateUserTest() {
@@ -223,6 +226,18 @@ public class DaoRunner {
             niceType.update(nicType);
         });
         System.out.println(niceType.findById(5L));
+    }
+
+    private static void updateLiquidTest(Long id) {
+        var liquidDao = LiquidDao.getInstance();
+        var mayBeLiquid = liquidDao.findById(id);
+        System.out.println(mayBeLiquid);
+        mayBeLiquid.ifPresent(liquid -> {
+            liquid.setPrice(BigDecimal.valueOf(1000));
+            liquid.setNicType(NicTypeDao.getInstance().findById(2L).orElse(null));
+            liquidDao.update(liquid);
+        });
+        System.out.println(liquidDao.findById(id));
     }
 
     private static void saveUserTest() {

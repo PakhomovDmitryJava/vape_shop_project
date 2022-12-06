@@ -5,30 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68770423-756b-4cc0-9048-5b03e0132928" name="Changes" comment="Some CRUD operation added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/BaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/LiquidDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/LiquidLineDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/LiquidTasteDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/ManufacturerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/NicConcentrationDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/NicTypeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/OriginCountryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Base.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Liquid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/LiquidLine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/LiquidTaste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Manufacturer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/NicConcentration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/NicType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/OriginCountry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/08a436b3-5527-4ca3-99dc-0befb3748100.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08a436b3-5527-4ca3-99dc-0befb3748100.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/08a436b3-5527-4ca3-99dc-0befb3748100/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/08a436b3-5527-4ca3-99dc-0befb3748100/storage_v2/_src_/database/vapeshop_repository.U2YFLg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/LiquidDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/LiquidDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DaoRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DaoRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +187,7 @@
       <workItem from="1669548284931" duration="51512000" />
       <workItem from="1670237618887" duration="11306000" />
       <workItem from="1670269003866" duration="4950000" />
+      <workItem from="1670309808981" duration="2997000" />
     </task>
     <task id="LOCAL-00001" summary="Database started">
       <created>1668980216928</created>
